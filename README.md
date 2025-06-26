@@ -39,35 +39,35 @@ cv2.VideoCapture + resizing + center crop
 
 
 
-Feature extraction:
+## Feature extraction:
 
 ResNet-50 pretrained on ImageNet
 
 Output: 2048-d feature vectors per frame
 
-Feature augmentation:
+## Feature augmentation:
 Gaussian noise
 Random scaling
 Temporal jittering
 
- Model Architecture
-1. Spatial Encoding
+ # Model Architecture
+## Spatial Encoding
 ResNet-50 → 2048-d feature vectors per frame
 
-2. Temporal Modeling
+## Temporal Modeling
 1D CNN for local temporal context
 GRU for sequence learning
 Scaled Dot-Product Attention for long-range dependencies
 
-3. Dual Pathway
+## Dual Pathway
 Gesture-Agnostic Path: Only temporal features
 Gesture-Aware Path: Concatenates gesture embeddings with temporal features
 Dynamic fusion of both paths via softmax weighting
 
-4. Final Prediction
+## Final Prediction
 Sigmoid output for binary classification of executional error
 
-Evaluation
+## Evaluation
 Evaluation Metrics:
 Accuracy
 Precision, Recall, F1-score
@@ -75,20 +75,20 @@ AUC (ROC)
 Jaccard Index
 
 
-Visualizations
+## Visualizations
 Training/validation loss and accuracy curves
 Frame-wise prediction plots
 Dynamic weighting between gesture-aware/agnostic paths
 Confusion matrices and ROC curves
 
-Future Work
+## Future Work
 Expand to more surgical tasks (e.g., knot-tying)
 Real-time feedback systems
 Integration with clinical workflows
-Lighter model variants for edge deployment
 
-Acknowledgements
+
+# Acknowledgements
 Dataset: JIGSAWS - Johns Hopkins University
-Research guidance and model inspiration: Simonyan & Zisserman’s Two-Stream Net, Vaswani et al.'s Transformers
+model inspiration: Simonyan & Zisserman’s Two-Stream Net, Vaswani et al.'s Transformers
 
 
