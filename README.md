@@ -55,40 +55,40 @@ Temporal jittering
 ResNet-50 → 2048-d feature vectors per frame
 
 ## Temporal Modeling
-1D CNN for local temporal context
-GRU for sequence learning
-Scaled Dot-Product Attention for long-range dependencies
+- 1D CNN for local temporal context
+- GRU for sequence learning
+- Scaled Dot-Product Attention for long-range dependencies
 
 ## Dual Pathway
-Gesture-Agnostic Path: Only temporal features
-Gesture-Aware Path: Concatenates gesture embeddings with temporal features
-Dynamic fusion of both paths via softmax weighting
+- Gesture-Agnostic Path: Only temporal features
+- Gesture-Aware Path: Concatenates gesture embeddings with temporal features
+- Dynamic fusion of both paths via softmax weighting
 
 ## Final Prediction
-Sigmoid output for binary classification of executional error
+- Sigmoid output for binary classification of executional error
 
 ## Evaluation
-Evaluation Metrics:
-Accuracy
-Precision, Recall, F1-score
-AUC (ROC)
-Jaccard Index
+- Evaluation Metrics:
+- Accuracy
+- Precision, Recall, F1-score
+- AUC (ROC)
+- Jaccard Index
 
 
 ## Visualizations
-Training/validation loss and accuracy curves
-Frame-wise prediction plots
-Dynamic weighting between gesture-aware/agnostic paths
-Confusion matrices and ROC curves
+- Training/validation loss and accuracy curves
+- Frame-wise prediction plots
+- Dynamic weighting between gesture-aware/agnostic paths
+- Confusion matrices and ROC curves
 
 ## Future Work
-Expand to more surgical tasks (e.g., knot-tying)
-Real-time feedback systems
-Integration with clinical workflows
+- Expand to more surgical tasks (e.g., knot-tying)
+- Real-time feedback systems
+- Integration with clinical workflows
 
 
 # Acknowledgements
-Dataset: JIGSAWS - Johns Hopkins University
-model inspiration: Simonyan & Zisserman’s Two-Stream Net, Vaswani et al.'s Transformers
+- Dataset: JIGSAWS - Johns Hopkins University
+- model inspiration: Simonyan & Zisserman’s Two-Stream Net, Vaswani et al.'s Transformers
 
 
