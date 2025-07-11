@@ -7,7 +7,7 @@ This repository contains the source code, dataset preprocessing pipeline, model 
 ## Overview
 
 Robotic-assisted surgery enables high-precision operations, but executional errors such as improper needle handling or loss of tool visibility remain a critical concern. This project proposes GESTURE-Net, a dual-pathway deep learning model combining gesture-aware and gesture-agnostic reasoning to robustly detect such errors from surgical video data.
-![Model Architecture](image/architecture.png)
+![Model Architecture](image/Architecture.png)
 
 ---
 
