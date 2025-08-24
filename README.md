@@ -1,12 +1,12 @@
-# GESTURE-Net: Gesture Aware and Agnostic Deep Learning for Robotic Surgical Error Detection
+# Executional Error Detection in Robotic Surgery using a Hybrid Dual Pathway Architecture
 
-This repository contains the source code, dataset preprocessing pipeline, model architecture, and evaluation framework for **GESTURE-Net**, a hybrid deep learning model designed to detect executional errors in robotic-assisted surgeries using the **JIGSAWS dataset**.
+This repository contains the source code, dataset preprocessing pipeline, model architecture, and evaluation framework of the preposed model, a hybrid deep learning model designed to detect executional errors in robotic-assisted surgeries using the **JIGSAWS dataset**.
 
 ---
 
 ## Overview
 
-Robotic-assisted surgery enables high-precision operations, but executional errors such as improper needle handling or loss of tool visibility remain a critical concern. This project proposes GESTURE-Net, a dual-pathway deep learning model combining gesture-aware and gesture-agnostic reasoning to robustly detect such errors from surgical video data.
+Robotic-assisted surgery enables high-precision operations, but executional errors such as improper needle handling or loss of tool visibility remain a critical concern. This project proposes a dual-pathway deep learning model combining gesture-aware and gesture-agnostic reasoning to robustly detect such errors from surgical video data.
 ![Model Architecture](Architecture.png)
 
 ---
